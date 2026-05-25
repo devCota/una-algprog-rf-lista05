@@ -1,0 +1,16 @@
+public class Cachorro extends Animal {
+    
+    public Cachorro(String nome, int idade) {
+        super(nome, idade);
+    }
+    
+    @Override
+    public String emitirSom() {
+        return "Au Au!";
+    }
+
+    @Override
+    public String toString() {  
+        return "Cachorro: " + this.getNome() + ", Idade: " + this.getIdade();
+    }
+}
