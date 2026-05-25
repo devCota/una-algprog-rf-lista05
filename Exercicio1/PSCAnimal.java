@@ -17,5 +17,15 @@ public class PSCAnimal {
         System.out.println(gato.emitirSom());
         System.out.println(gato.toString());
 
+        List<Animal> animais = new ArrayList<>();
+        animais.add(animal);
+        animais.add(cachorro);
+        animais.add(gato);
+
+        for (Animal animal : animais) {
+            System.out.println(animal.toString());
+            System.out.println(animal.emitirSom());
+        }
+
     }
 }
